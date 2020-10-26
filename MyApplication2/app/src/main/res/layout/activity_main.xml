@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloWorldString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Constraint 부모의 어디에(Bottom, left, right, top) 맞춘다  -->
+    <!--contraintLayout 안에 있는 것들은 위치의 어딘지 하나라도 정의를 해야함 -->
+    <Button
+        android:id="@+id/TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextButton"
+        app:layout_constraintTop_toBottomOf="@id/helloWorldString"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/TableButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="table activity"
+        app:layout_constraintTop_toBottomOf="@id/TextButton"
+
+        >
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

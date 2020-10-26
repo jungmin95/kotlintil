@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableActivity">
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:id="@+id/firstText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="first"/>
+            <TextView
+                android:id="@+id/secondText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="second"/>
+            <TextView
+                android:id="@+id/thirdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="third"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/forthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forth"/>
+            <TextView
+                android:id="@+id/fifthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fifth"/>
+            <TextView
+                android:id="@+id/sixthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sixth"/>
+        </TableRow>
+    </TableLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

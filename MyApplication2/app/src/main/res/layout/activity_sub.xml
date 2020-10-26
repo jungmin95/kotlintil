@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:id="@+id/SubActivityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SucActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Constraint 부모의 어디에(Bottom, left, right, top) 맞춘다  -->
+    <!--contraintLayout 안에 있는 것들은 위치의 어딘지 하나라도 정의를 해야함 -->
+    <Button
+        android:id="@+id/SubActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubActivityButton"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/SubActivityTextView"
+        >
+    </Button>
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
